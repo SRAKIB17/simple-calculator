@@ -16,11 +16,13 @@ function inputValue(value){
         inputDisplay.innerText = inputDisplay.innerText.slice(0,-1);
     }
     else if (input == '.'){
-        console.log(6456)
-        if(inputDisplay.innerText == null){
-            inputDisplay.innerText += '.'
-            console.log(3656)
-        } 
+        if(inputDisplay.innerText == ''){
+            inputDisplay.innerText = 0+'.'
+        }
+        else if(inputDisplay.innerText.includes('.')==false){
+            inputDisplay.innerText = inputDisplay.innerText+'.'
+            console.log(inputDisplay.innerText.match('.'))
+        }
 
     }
     else if(input == '='){
