@@ -27,7 +27,7 @@ function inputValue(value){
     }
     else if(input == '='){
         if (inputDisplay.innerHTML == ''){
-            ans.innerText = 'Input Error';
+            ans.innerText = ans.innerText;
         }
         else{
             console.log(36)
@@ -43,6 +43,7 @@ function inputValue(value){
     }
     else if(input == '-' || input == '+' || input == '*' || input == '/'){
         getCalculate(input);
+        
     }
 }
 function getCalculate(input){
